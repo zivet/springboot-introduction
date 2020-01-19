@@ -1,9 +1,7 @@
 package com.ioverlap.dojo.helloworld.controller;
 
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 
-@WebServlet(name = "helloServlet", urlPatterns = "/helloServlet")
 public class HelloServlet extends HttpServlet {
 
     @Override
