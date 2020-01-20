@@ -1,9 +1,7 @@
 package com.ioverlap.dojo.helloworld.controller;
 
 import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
 
-@WebListener
 public class HelloListener implements ServletContextListener {
 
     @Override
