@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <h1>Thymeleaf Scopes</h1>
+    <ul>
+        <li>Request: <span th:text="${#httpServletRequest.getAttribute('request')}"></span></li>
+        <li>Session: <span th:text="${session.session}"></span></li>
+        <li>Application: <span th:text="${application.application}"></span></li>
+    </ul>
+
+</html>
