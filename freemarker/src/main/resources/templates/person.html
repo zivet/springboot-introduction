@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>name</th>
+                <th>email</th>
+                <th>phone</th>
+            </tr>
+
+            <#list person as p>
+                <tr>
+                    <td>${p.name}</td>
+                    <td>${p.email}</td>
+                    <td>${p.phone}</td>
+                </tr>
+            </#list>
+
+        </table>
+    </body>
+</html>
