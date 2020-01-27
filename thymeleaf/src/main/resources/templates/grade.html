@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <style>
+        #success-msg{
+            color: green;
+        }
+
+        #failed-msg{
+            color: red;
+        }
+    </style>
+
+    <div id="success-msg" th:if="${grade} > 60">You passed the exam.
+
+        <div th:switch="${gpa}">You are
+            <span th:case="A">Excellent</span>
+            <span th:case="B">God</span>
+            <span th:case="C">Okay</span>
+            <span th:case="D">Ned improvement</span>
+        </div>
+
+    </div>
+
+    <h2 id="failed-msg" th:if="${grade} < 60">You failed the exam.</h2>
+
+</html>
