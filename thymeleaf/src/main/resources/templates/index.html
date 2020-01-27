@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+    <ul>
+        <!-- redirect to demo page without parameter -->
+        <li><a th:href="@{~/demo}">Visit Demo Page</a></li>
+
+        <!-- redirect to demo page with parameter -->
+        <li><a th:href="@{~/demo(id=1, name=eric)}">Visit Demo page With Parameter</a></li>
+
+        <li><a th:href="@{~/grade}">Visit Grade Page</a></li>
+
+        <li><a th:href="@{~/user}">Visit User Page</a></li>
+
+        <li><a th:href="@{~/scope}">Visit Scope Page</a></li>
+
+    </ul>
+
+
+</html>
