@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <style>
+            span {color: red;}
+        </style>
+    </head>
+    <body>
+        <h1>Add User</h1>
+        <form action="add" method="post">
+            <span th:errors="${user.name}"></span><br/>
+            Name:   <input name="name" type="text"><br/>
+            <span th:errors="${user.email}"></span><br/>
+            Email:   <input name="email" type="text"><br/>
+            <span th:errors="${user.password}"></span><br/>
+            Password:   <input name="password" type="password"><br/>
+            <span th:errors="${user.grade}"></span><br/>
+            Grade:  <input name="grade" type="text"><br/>
+            <input type="submit" value="add"><br/>
+        </form>
+    </body>
+</html>
